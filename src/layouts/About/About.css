@@ -1,0 +1,24 @@
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3.75rem;
+  margin-bottom: 0;
+}
+
+.different {
+  background: linear-gradient(to right,#51a2ff,#53eafd, #51a2ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}

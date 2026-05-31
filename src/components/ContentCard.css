@@ -1,0 +1,82 @@
+.card {
+  padding: 2rem;
+  background: 
+  linear-gradient(
+      to right,
+      rgba(15, 23, 42, 0.8),
+      rgba(30, 41, 59, 0.7),
+      rgba(15, 23, 42, 0.8)
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 211, 242, 0.2),
+      rgba(81, 162, 255, 0.2)
+    ),
+    linear-gradient(
+      to left bottom,
+      rgba(0, 184, 219, 0.3),
+      rgba(43, 127, 255, 0.3),
+      rgba(173, 70, 255, 0.2)
+    );
+  box-shadow:
+  0 0 0 1px rgba(56,189,248, 0.45),   
+  0 0 12px 2px rgba(56,189,248, 0.35),
+  0 0 40px 6px rgba(56,189,248, 0.18), 
+  0 0 90px 16px rgba(14,116,220, 0.12);
+  border: 2px solid rgba(0, 211, 242, 0.3);
+  border-radius: 32px;
+}
+
+.card p {
+  font-size: 0.938rem;
+}
+
+.card-container {
+  width: 200px;
+  max-height: 300px;
+  padding: 0.5rem 0;
+}
+
+.icon {
+  background: 
+    linear-gradient(
+      to left bottom,
+      rgba(0, 211, 242, 0.3),
+      rgba(43, 127, 255, 0.3)
+    ),
+    linear-gradient(
+      to left bottom,
+      rgba(0, 184, 219, 0.2),
+      rgba(21, 93, 252, 0.2)
+    );
+  border: 1px solid #00D3F2;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.card-glow-line {
+  background: linear-gradient(
+    to right,
+    rgba(81, 162, 255, 0),
+    rgba(81, 162, 255, 1),
+    rgba(81, 162, 255, 0)
+  );
+  height: 2px;
+  width: 30%;
+  margin: 0.75rem auto;
+  border-radius: 999px;
+}
+
+.card-button {
+  width: 100%;
+  padding: 0.875rem;
+  margin-top: 1.25rem;
+  background: rgba(0, 211, 242, 0.08);
+  border: 1px solid rgba(0, 211, 242, 0.3);
+  border-radius: 10px;
+  color: #00D3F2;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
