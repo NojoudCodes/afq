@@ -1,6 +1,6 @@
 import './Jobsection.css'
-import ContentCard from "@/components/ContentCard";
-import arrow from '@/assets/icon-arrow-right.png';
+import ContentCard from "../../components/ContentCard";
+import arrow from '../../assets/icon-arrow-right.png';
 
 function Jobs() {
   return(

@@ -1,8 +1,8 @@
 import './Market.css'
-import ContentCard from "@/components/ContentCard";
-import city from '@/assets/icon-city-signal.png';
-import code from '@/assets/icon-code-circle.png';
-import browser from '@/assets/icon-browser-config.png';
+import ContentCard from "../../components/ContentCard";
+import city from '../../assets/icon-city-signal.png';
+import code from '../../assets/icon-code-circle.png';
+import browser from '../../assets/icon-browser-config.png';
 
 
 function Market() {

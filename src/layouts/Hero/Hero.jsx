@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Hero.css'
-import Navbar from '@/layouts/Navbar/Navbar.jsx'
+import Navbar from '../../layouts/Navbar/Navbar.jsx'
 
 function Hero() {
   const [jobTitle, setJobTitle] = useState('');

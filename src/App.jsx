@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
-import Jobspage from "./pages/Jobspage"
+import Jobspage from "./pages/Jobs/Jobspage"
 import NotFound from "./pages/NotFound"
 
 function App() {

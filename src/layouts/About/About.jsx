@@ -1,8 +1,8 @@
 import './About.css'
-import ContentCard from "@/components/ContentCard";
-import checked from '@/assets/icon-check-circle.png';
-import growth from '@/assets/icon-growth-chart.png';
-import target from '@/assets/icon-target.png';
+import ContentCard from "../../components/ContentCard";
+import checked from '../../assets/icon-check-circle.png';
+import growth from '../../assets/icon-growth-chart.png';
+import target from '../../assets/icon-target.png';
 
 
 function About() {
