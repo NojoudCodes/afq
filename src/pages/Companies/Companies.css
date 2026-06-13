@@ -4,10 +4,64 @@
 }
 
 .main-title {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-size: 2.25rem;
+  text-align: center;
 }
 
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.companies-search,
+.companies-select {
+  display: flex;
+}
+.companies-search input {
+  width: 100%;
+  max-width: 31.25rem;
+}
+.companies-select select {
+  background-image: url("/chevron.png");
+  background-repeat: no-repeat;
+  background-position: left 1.2rem center;
+  background-size: 1rem 1rem;
+  cursor: pointer;
+  padding-right: 30px;
+  width: 100%;
+  max-width: 12.5rem;
+}
+.companies-select select option {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+.companies-search input,
+.companies-select select {
+  padding: 0.8rem 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+.companies-search input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
 .companies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,11 +69,49 @@
   gap: 2rem;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #0f172a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: min(500px, 90%);
+  color: white;
+}
+.companies-button {
+  width: fit-content;
+  padding: 0.875rem 1.5rem;
+}
+.modal-content button {
+  display: block;
+  margin-right: auto;
+  margin-top: 1rem;
+}
 .companies-card {
   background:
-    linear-gradient(to right,  rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.8)),
-    linear-gradient(to top,    rgba(0, 211, 242, 0.2), rgba(81, 162, 255, 0.2)),
-    linear-gradient(to left bottom, rgba(0, 184, 219, 0.3), rgba(43, 127, 255, 0.3), rgba(173, 70, 255, 0.2));
+    linear-gradient(
+      to right,
+      rgba(15, 23, 42, 0.8),
+      rgba(30, 41, 59, 0.7),
+      rgba(15, 23, 42, 0.8)
+    ),
+    linear-gradient(to top, rgba(0, 211, 242, 0.2), rgba(81, 162, 255, 0.2)),
+    linear-gradient(
+      to left bottom,
+      rgba(0, 184, 219, 0.3),
+      rgba(43, 127, 255, 0.3),
+      rgba(173, 70, 255, 0.2)
+    );
   box-shadow:
     0 0 0 1px rgba(56, 189, 248, 0.45),
     0 0 12px 2px rgba(56, 189, 248, 0.35),
@@ -35,7 +127,8 @@
   padding-bottom: 0.25rem;
 }
 
-.companies-card h4 {
+.companies-card h4,
+.modal-content h4 {
   font-size: 0.938rem;
   color: rgba(81, 162, 255, 1);
   margin-top: 0;

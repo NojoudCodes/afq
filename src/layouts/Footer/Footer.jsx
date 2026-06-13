@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="glow-line"></div>
-        <p>Footer</p>
+        <p>أفق - ٢٠٢٦</p>
       </footer>
     </>
   )

@@ -1,6 +1,6 @@
+import './Navbar.css'
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import './Navbar.css'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
